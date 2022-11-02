@@ -5,14 +5,14 @@ def calc():
     players = float(input())
     print("Input engraving book price:")
     price = float(input())
-    bid = (price * 0.95 - (price / players)) / 1.1
+    bid = (price * 0.95 - (price * 0.95 / players)) / 1.1
     print(
     "Bid for maximum profit: " +
     str(math.ceil(bid))
     )
     print(
     "Bid for equal profit: " +
-    str(math.ceil((price * 0.95 - (price / players))))
+    str(math.ceil((price * 0.95 - (price * 0.95 / players))))
     )
     
 calc()
